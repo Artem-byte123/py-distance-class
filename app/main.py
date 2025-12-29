@@ -1,8 +1,7 @@
 from __future__ import annotations
 from typing import Union
 
-DistanceOrNumber = Union[Distance, int, float]
-
+DistanceOrNumber = Union["Distance", int, float]
 class Distance:
     def __init__(self, km: int | float) -> None:
         self.km = km
